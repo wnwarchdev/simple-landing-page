@@ -16,6 +16,7 @@ $font-logo: "WisdomScriptRegular",'Libre Baskerville', serif;
 $fontweight-bold: 700;
 
 $color-black: #000000;
+$color-white: #FFFFFF;
 $color-yellow: #fed136;
 $color-body: #777777;
 
@@ -68,9 +69,102 @@ h5 {
 
 }
 
+a {
+  color: $color-white;
+  text-decoration: none;
+
+}
+
 /*Splash*/
 
+.splash {
+height: 100vh;
+background-position: center center;
+background-size: cover;
+background-attachment: fixed;
+background-image: url("/images/background-image.jpg");
+}
 
+
+nav {
+  padding-top: 50px;
+
+  border: 1px solid red;
+}
+
+
+nav .container h1 {
+text-align: left;
+font-family: "WisdomScriptRegular";
+color: $color-yellow;
+font-size: 26px;
+position: absolute;
+transform: translate(0, -30px);
+
+}
+
+nav ul {
+list-style-type: none;
+text-align: right;
+  position: relative;
+  width: 100%;
+
+}
+
+nav li {
+  display: inline-block;
+  font-size: 14px;
+  font-family: $font-heading;
+  color: $color-white;
+  text-decoration: none;
+  margin-left: 35px;
+  border: 1px solid green;
+
+}
+
+
+
+.splash-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid white;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+.splash h1,
+.splash h2 {
+  color:$color-white;
+}
+
+.splash-inner h1 {
+  font-family: $font-heading;
+  font-size: 75px;
+
+}
+
+.splash h2 {
+  font-family: $font-caption;
+  font-size: 40px;
+}
+
+
+.splash .btn {
+  color: $color-white;
+  font-family: $font-heading;
+  font-weight: $fontweight-bold;
+  font-size: 18px;
+  background: $color-yellow;
+  border: none;
+  border-radius: 5px;
+  width: 240px;
+  height: 65px;
+}
 
 /*Services*/
 
@@ -107,7 +201,7 @@ padding: 120px 0;
 
 .card {
  border: 1px solid blue;
- width: 300px;
+ max-width: 300px;
  height:400px;
  background: white;
  padding: 0 auto;
