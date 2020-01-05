@@ -110,10 +110,10 @@ nav li {
 .splash-inner {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  transform: translateY(-50%);
   border: 1px solid white;
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
 }
 
@@ -228,6 +228,7 @@ footer .copyright {
 footer p {
   text-align: left;
   vertical-align: middle;
+  font-family: "Montserrat", sans-serif;
   display: inline-block;
 }
 
