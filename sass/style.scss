@@ -15,7 +15,7 @@ $font-logo: "WisdomScriptRegular",'Libre Baskerville', serif;
 
 $fontweight-bold: 700;
 
-$color-black: #000000;
+$color-black: #222222;
 $color-white: #FFFFFF;
 $color-yellow: #fed136;
 $color-body: #777777;
@@ -191,6 +191,11 @@ nav li {
   margin-bottom: 120px;
 }
 
+.services .card-text {
+padding: 0 20px;
+
+}
+
 .card-icon {
   width: 65px;
   height: 65px;
@@ -239,38 +244,67 @@ padding-bottom: 120px;
 
 }
 
+.portfolio .card-text {
+  padding-top:28px;
+  padding-bottom: 30px;
+  border: 1px solid orange;
+}
+
+.portfolio p {
+  margin: 0;
+  font-family:$font-caption;
+}
+
 /*Footer*/
 
 footer {
-  min-height:120px;
+
   border:1px solid blue;
-  position: relative;
-  line-height: 60px;
+
+}
+
+footer .copyright {
+position: absolute;
+  border: 1px solid cyan;
+  top:50%;
+  left:0;
+  transform: translateY(-50%);
+}
+
+footer p {
+  text-align: left;
+
+  vertical-align: middle;
+
+  display: inline-block;
 
 
 }
 
-footer p {
-  margin-left:0;
-  text-align: left;
-
+footer .row {
+  border: 1px solid olive;
+  height:120px;
+  position: relative;
 
 }
 
 footer ul {
-
   list-style-type:none;
-position: absolute;
-border:1px solid blue;
-margin-left: 50%;
+  border:1px solid blue;
+  margin: 0 auto;
+  padding: 0px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+
 }
 
 footer li {
  font-size: 0px;
  display:inline-block;
  margin: 0;
-
-
 }
 
 footer li a {}
@@ -280,9 +314,11 @@ footer li a i {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: black;
+  background: $color-black;
   text-align: center;
-  vertical-align: middle;
   line-height: 100px;
+  padding-top: 20%;
+
+
 
 }

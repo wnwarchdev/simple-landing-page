@@ -43,7 +43,7 @@ body {
 .card-text h5 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #000000;
+  color: #222222;
 }
 
 .section-title h3 {
@@ -154,6 +154,10 @@ nav li {
   margin-bottom: 120px;
 }
 
+.services .card-text {
+  padding: 0 20px;
+}
+
 .card-icon {
   width: 65px;
   height: 65px;
@@ -197,24 +201,51 @@ nav li {
      object-fit: cover;
 }
 
+.portfolio .card-text {
+  padding-top: 28px;
+  padding-bottom: 30px;
+  border: 1px solid orange;
+}
+
+.portfolio p {
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+}
+
 /*Footer*/
 footer {
-  min-height: 120px;
   border: 1px solid blue;
-  position: relative;
-  line-height: 60px;
+}
+
+footer .copyright {
+  position: absolute;
+  border: 1px solid cyan;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 footer p {
-  margin-left: 0;
   text-align: left;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+footer .row {
+  border: 1px solid olive;
+  height: 120px;
+  position: relative;
 }
 
 footer ul {
   list-style-type: none;
-  position: absolute;
   border: 1px solid blue;
-  margin-left: 50%;
+  margin: 0 auto;
+  padding: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 footer li {
@@ -228,9 +259,9 @@ footer li a i {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: black;
+  background: #222222;
   text-align: center;
-  vertical-align: middle;
   line-height: 100px;
+  padding-top: 20%;
 }
 /*# sourceMappingURL=style.css.map */
