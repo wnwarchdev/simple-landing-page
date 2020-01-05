@@ -13,4 +13,57 @@ $font-caption: 'Libre Baskerville', serif;
 $font-body: 'Roboto Slab', serif;
 $font-logo: "WisdomScriptRegular",'Libre Baskerville', serif;
 
+$fontweight-bold: 700;
+
 /*Global*/
+
+body {
+text-align: center;
+
+}
+
+
+.section-title {
+}
+
+.section-title h3,
+.card-text h5 {
+  font-family: $font-heading;
+  font-weight: $fontweight-bold;
+  color:red;
+}
+
+.section-title h4 {
+  font-family: $font-caption;
+}
+
+/*Splash*/
+
+
+
+/*Services*/
+
+
+
+/*Portfolio*/
+
+.card {
+ border: 1px solid blue;
+ width: 300px;
+ height:400px;
+ background: yellow;
+ margin-bottom: 50px;
+}
+
+.portfolio .card-image {
+  height: 300px;
+}
+
+.portfolio .card-image img {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+
+}
+
+/*Footer*/
