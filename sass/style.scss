@@ -27,6 +27,16 @@ $color-body: #777777;
 }
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin: 0;
+
+}
+
 body {
 text-align: center;
 padding: 0;
@@ -56,7 +66,8 @@ padding: 0!important; /* to get rid of default padding*/
 
 .section-title h3,{
   font-size: 40px;
-
+  margin-bottom: 20px;
+  margin-top: 120px;
 }
 
 h5 {
@@ -95,11 +106,13 @@ nav {
 
 nav .container h1 {
 text-align: left;
-font-family: "WisdomScriptRegular";
+font-family: $font-logo;
 color: $color-yellow;
-font-size: 26px;
+font-size: 30px;
 position: absolute;
-transform: translate(0, -30px);
+transform: translate(0, -10px);
+font-weight: 400;
+
 
 }
 
@@ -115,6 +128,7 @@ nav li {
   display: inline-block;
   font-size: 14px;
   font-family: $font-heading;
+  font-weight: $fontweight-bold;
   color: $color-white;
   text-decoration: none;
   margin-left: 35px;
@@ -145,12 +159,16 @@ nav li {
 .splash-inner h1 {
   font-family: $font-heading;
   font-size: 75px;
+  border: 1px solid pink;
+  margin-bottom: 60px;
 
 }
 
 .splash h2 {
   font-family: $font-caption;
   font-size: 40px;
+  margin-bottom: 50px;
+  border: 1px solid violet;
 }
 
 
@@ -196,7 +214,7 @@ nav li {
 
 .portfolio {
 background: #f7f7f7;
-padding: 120px 0;
+padding-bottom: 120px;
 }
 
 .card {
