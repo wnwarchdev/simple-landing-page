@@ -186,9 +186,12 @@ nav li {
 
 /*Services*/
 
+.services {
+  margin-bottom: 120px;
+}
+
 .services .card {
   height:auto;
-  margin-bottom: 120px;
 }
 
 .services .card-text {
@@ -318,7 +321,4 @@ footer li a i {
   text-align: center;
   line-height: 100px;
   padding-top: 20%;
-
-
-
 }

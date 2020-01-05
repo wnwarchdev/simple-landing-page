@@ -149,9 +149,12 @@ nav li {
 }
 
 /*Services*/
+.services {
+  margin-bottom: 120px;
+}
+
 .services .card {
   height: auto;
-  margin-bottom: 120px;
 }
 
 .services .card-text {
