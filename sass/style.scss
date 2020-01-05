@@ -15,6 +15,10 @@ $font-logo: "WisdomScriptRegular",'Libre Baskerville', serif;
 
 $fontweight-bold: 700;
 
+$color-black: #000000;
+$color-yellow: #fed136;
+$color-body: #777777;
+
 /*Global*/
 
 *, *::before, *::after {
@@ -25,7 +29,10 @@ $fontweight-bold: 700;
 body {
 text-align: center;
 padding: 0;
-margin:0
+margin:0;
+font-family:$font-body;
+font-size: 14px;
+color: $color-body;
 }
 
 .col-4 {
@@ -42,11 +49,17 @@ padding: 0!important; /* to get rid of default padding*/
 .card-text h5 {
   font-family: $font-heading;
   font-weight: $fontweight-bold;
+  color: $color-black;
 
 }
 
 .section-title h3,{
   font-size: 40px;
+
+}
+
+h5 {
+  font-size: 18px;
 
 }
 
@@ -61,7 +74,29 @@ padding: 0!important; /* to get rid of default padding*/
 
 /*Services*/
 
+.services .card {
+  height:auto;
+  margin-bottom: 120px;
+}
 
+.card-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: white;
+  display: inline-block;
+  border: 4px solid $color-yellow;
+
+}
+
+.card-icon i {
+  font-size: 34px;
+  line-height: 55px;
+  color: $color-yellow;
+
+
+
+}
 
 /*Portfolio*/
 
