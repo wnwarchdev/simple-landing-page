@@ -1,7 +1,7 @@
 /*Fonts*/
 @font-face {
   font-family: "WisdomScriptRegular";
-  src: url("/vendor/wisdom_script.otf");
+  src: url("../vendor/wisdom_script.otf");
 }
 
 /*Variables*/
@@ -71,7 +71,7 @@ a {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url("/images/background-image.jpg");
+  background-image: url("../images/background-image.jpg");
 }
 
 nav {
@@ -267,5 +267,70 @@ footer li a i {
   text-align: center;
   line-height: 100px;
   padding-top: 20%;
+}
+
+/*Media Querries*/
+@media screen and (max-width: 768px) {
+  footer .copyright {
+    position: relative;
+    margin: 0 auto;
+  }
+  .copyright p {
+    text-align: center;
+    display: block;
+    padding-top: 80px;
+  }
+  nav .container h1 {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50px);
+  }
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+  }
+  nav li {
+    display: inline-block;
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .splash-inner h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .splash h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .splash .btn {
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+  }
+  .section-title h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .portfolio,
+  .services {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
